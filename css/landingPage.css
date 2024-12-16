@@ -11,9 +11,13 @@
 
 body {
     margin: 0 auto;
+    width: 90%;
+    background-color:#303841;
     --font-main: Arial, Helvetica, sans-serif;
 }
-
+main{
+    background-color: #f0f0f0;
+}
 h2 {
     --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif:
 }
@@ -38,17 +42,13 @@ ul li {
     color: white;
 }
 
-#welcome-section, #contact {
+#welcome-section{
     background-color: var(--color-secondary);
     color: white;
 }
 
 .contact-link {
     color: white;
-}
-
-body {
-    background-color: #f0f0f0;
 }
 
 footer {
@@ -59,14 +59,20 @@ footer {
 /* Barra de Navegación */
 
 .nav {
-        width: 100%;
-        height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    & img{
+        width: 100px;
+        margin-left: 20px;
+    }
 }
 
 .nav-list {
     display: flex;
     justify-content: end;
-    padding-top: 15px;
     list-style: none;
 }
 
@@ -114,7 +120,7 @@ h1 {
 
 /* Sección de Proyectos */
 
-#projects {
+#tapas {
     text-align: center;
 }
 
@@ -151,7 +157,7 @@ a img {
 
 /* Sección de Contacto */
 
-#contact {
+/* #contact {
     width: 100%;
     height: 700px;
     display: grid;
@@ -188,7 +194,7 @@ a img {
 
 .contact-link:hover {
     color: #ccc;
-}
+} */
 
 /* Pie de Página */
 
@@ -212,6 +218,8 @@ footer p:nth-of-type(2) {
     width: 100%;
     max-height: 500px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
 }
 
 .carousel-slide {
@@ -219,19 +227,20 @@ footer p:nth-of-type(2) {
 }
 
 .carousel-slide.active {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
-.carousel-slide img {
-    width: 100%;
-    height: auto;
-    transition: opacity 0.5s ease-in-out;
+.carousel-slide picture {
+    object-fit:cover;
+    width:100%;
+    height: 100px;
 }
 
 .carousel-prev, .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 10px;
