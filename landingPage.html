@@ -25,40 +25,68 @@
          <div class="carousel-slide active">
             <picture>
                <source
-               srcset="
-               ./img/alitas.webp 480w
-               ./img/calamares.webp 768w
-               ./img/embutido.webp 1080w
-               ./img/tortilla.webp 1440px
-               "
-               sizes="(max-width: 480px) 480px,
-               (max-width: 768px) 768px,
-               (max-width: 1080px) 1080px,
-               (max-width: 1440px) 1440px,">
-               
-            </picture>
+                   srcset="./img/croquetas-330x220.webp 480w"
+                   media="(max-width: 480px)"
+                   type="image/webp">
+       
+               <source
+                   srcset="./img/croquetas-600x400.webp 768w"
+                   media="(max-width: 768px)"
+                   type="image/webp">
+       
+               <source
+                   srcset="./img/croquetas-1200x600.webp 1200w"
+                   media="(max-width: 1200px)"
+                   type="image/webp">
+
+               <img src="./img/croquetas-1.webp	" loading="lazy">
+           </picture>
             <!-- <img src="./img/croquetas.webp" alt="Imagen 1" loading="lazy"> -->
          </div>
          <div class="carousel-slide">
             <picture>
                <source
-               srcset=""
-               sizes="(max-width: 480px) 480px,
-               (max-width: 768px) 768px,
-               (max-width: 1080px) 1080px,
-               (max-width: 1440px) 1440px,">
-            </picture>
+                   srcset="./img/calamares-330x220.webp 480w"
+                   media="(max-width: 480px)"
+                   type="image/webp">
+
+               <source
+                   srcset="./img/calamares-600x400.webp 768w"
+                   media="(max-width: 768px)"
+                   type="image/webp">
+       
+               <source
+                   srcset="./img/calamares-1200x600.webp 1200w"
+                   media="(max-width: 1200px)"
+                   type="image/webp">
+       
+              
+                   
+               <img src="./img/calamares-1.webp" loading="lazy">
+           </picture>
             <!-- <img src="./img/tortilla.webp" alt="Imagen 2"loading="lazy"> -->
          </div>
          <div class="carousel-slide">
             <picture>
                <source
-               srcset=""
-               sizes="(max-width: 480px) 480px,
-               (max-width: 768px) 768px,
-               (max-width: 1080px) 1080px,
-               (max-width: 1440px) 1440px,">
-            </picture>
+                   srcset="./img/sandwich-330x220.webp 480w"
+                   media="(max-width: 480px)"
+                   type="image/webp">
+       
+               <source
+                   srcset="./img/sandwich-600x400.webp 768w"
+                   media="(max-width: 768px)"
+                   type="image/webp">
+       
+               <source
+                   srcset="./img/sandwich-1200x600.webp 1200w"
+                   media="(max-width: 1200px)"
+                   type="image/webp">
+       
+               
+                   
+               <img src="./img/sandwich-1200x600.webp" loading="lazy">
+           </picture>
             <!-- <img src="./img/almondigas.webp" alt="Imagen 3"loading="lazy"> -->
          </div>
          <button class="carousel-next">→</button>
@@ -67,137 +95,107 @@
       <!-- Sección de Proyectos -->
       <section id="tapas">
          <h2>Tapas</h2>
-         <div class="projects-grid">
-            <div class="project-tile">
-               <a href="">
-               <img src="img\300x200.png" alt="Plataforma E-Commerce">
+         <div class="tapasGrid">
+            <div class="tapasTitle">
+               <p><strong>Bar manolo</strong></p>
+               <a href="#direccionFicticia">
+                  <img src="./img/alitas.webp" alt="foto de tapas de alitas">
                </a>
                <p><strong>Tapa</strong><br>
                   Desarrollo de una plataforma de comercio electrónico con carrito de compras y pasarela de pago integrada.
                </p>
             </div>
-            <div class="project-tile">
+            <div class="tapasTitle">
+               <p><strong>Bar manolo</strong></p>
                <a href="">
-               <img src="img\300x200.png" alt="Aplicación de Redes Sociales">
+                  <img src="./img/almondigas.webp" alt="foto de tapas de almondigas">
                </a>
                <p><strong>Tapa</strong><br>
                   Creación de una aplicación para compartir fotos y conectar con amigos.
                </p>
             </div>
-            <div class="project-tile">
+            <div class="tapasTitle">
+               <p><strong>Bar Valdueza</strong></p>
                <a href="">
-               <img src="img\300x200.png" alt="Blog Personal">
+                  <img src="./img/tortilla-1.webp" alt="foto de tapas de tortilla">
                </a>
                <p><strong>Tapa</strong><br>
                   Un blog donde comparto artículos sobre programación y tecnología.
                </p>
             </div>
-            <div class="project-tile">
+            <div class="tapasTitle">
+               <p><strong>Bar Valdueza</strong></p>
                <a href="">
-               <img src="img\300x200.png" alt="Sitio Web de Portafolio">
+                  <img src="./img/morcilla.webp" alt="foto de tapas de morcilla">
                </a>
                <p><strong>Tapa</strong><br>
                   Mi sitio web personal para mostrar mis proyectos y habilidades.
                </p>
             </div>
-            <div class="project-tile">
+            <div class="tapasTitle">
+               <p><strong>Bar Luisito el chiquito</strong></p>
                <a href="">
-               <img src="img\300x200.png" alt="Herramienta de Gestión de Tareas">
+                  <img src="./img/ensaladilla.webp" alt="foto de tapas de ensaladilla">
                </a>
                <p><strong>Tapa</strong><br>
                   Aplicación web para organizar tareas y proyectos en equipo.
                </p>
             </div>
-            <div class="project-tile">
+            <div class="tapasTitle">
+               <p><strong>Bar Luisito el chiquito</strong></p>
                <a href="">
-               <img src="img\300x200.png" alt="Aplicación del Tiempo">
+                  <img src="./img/pulpo.webp" alt="foto de tapas de pulpo">
                </a>
                <p><strong>Tapa</strong><br>
                   App que muestra el pronóstico del tiempo utilizando APIs.
                </p>
             </div>
-            <div class="project-tile">
+            <div class="tapasTitle">
+               <p><strong>Bar Gavela</strong></p>
+               <a href="">
+                  <img src="./img/patatasAlioli.webp" alt="foto de tapas patatas alioli">
+               </a>
+               <p><strong>Tapa</strong><br>
+                  Desarrollo de una plataforma de comercio electrónico con carrito de compras y pasarela de pago integrada.
+               </p>
+            </div>
+            <div class="tapasTitle">
+                <p><strong>Bar Gavela</strong></p>
                 <a href="">
-                <img src="img\300x200.png" alt="Plataforma E-Commerce">
-                </a>
-                <p><strong>Tapa</strong><br>
-                   Desarrollo de una plataforma de comercio electrónico con carrito de compras y pasarela de pago integrada.
-                </p>
-             </div>
-             <div class="project-tile">
+                   <img src="./img/sopasAjo.webp" alt="foto de tapas sopa de ajo">
+                  </a>
+                  <p><strong>Tapa</strong><br>
+                     Creación de una aplicación para compartir fotos y conectar con amigos.
+                  </p>
+               </div>
+               <div class="tapasTitle">
+                <p><strong>Bar Carlitos</strong></p>
                 <a href="">
-                <img src="img\300x200.png" alt="Aplicación de Redes Sociales">
-                </a>
-                <p><strong>Tapa</strong><br>
-                   Creación de una aplicación para compartir fotos y conectar con amigos.
-                </p>
-             </div>
-             <div class="project-tile">
-                <a href="">
-                <img src="img\300x200.png" alt="Blog Personal">
+                <img src="./img/salmonejo.webp" alt="foto de tapas de salmonejo">
                 </a>
                 <p><strong>Tapa</strong><br>
                    Un blog donde comparto artículos sobre programación y tecnología.
                 </p>
              </div>
-             <div class="project-tile">
+             <div class="tapasTitle">
+               <p><strong>Bar Cuarentena</strong></p>
                 <a href="">
-                <img src="img\300x200.png" alt="Sitio Web de Portafolio">
+                <img src="./img/embutido.webp" alt="foto de tapas de embutido">
                 </a>
                 <p><strong>Tapa</strong><br>
                    Mi sitio web personal para mostrar mis proyectos y habilidades.
                 </p>
              </div>
-             <div class="project-tile">
-                <a href="">
-                <img src="img\300x200.png" alt="Herramienta de Gestión de Tareas">
-                </a>
-                <p><strong>Tapa</strong><br>
-                   Aplicación web para organizar tareas y proyectos en equipo.
-                </p>
-             </div>
-             <div class="project-tile">
-                <a href="">
-                <img src="img\300x200.png" alt="Aplicación del Tiempo">
-                </a>
-                <p><strong>Tapa</strong><br>
-                   App que muestra el pronóstico del tiempo utilizando APIs.
-                </p>
-             </div>
-             <div class="project-tile">
-                <a href="">
-                <img src="img\300x200.png" alt="Plataforma E-Commerce">
-                </a>
-                <p><strong>Tapa</strong><br>
-                   Desarrollo de una plataforma de comercio electrónico con carrito de compras y pasarela de pago integrada.
-                </p>
-             </div>
-             <div class="project-tile">
-                <a href="">
-                <img src="img\300x200.png" alt="Aplicación de Redes Sociales">
-                </a>
-                <p><strong>Tapa</strong><br>
-                   Creación de una aplicación para compartir fotos y conectar con amigos.
-                </p>
-             </div>
-             <div class="project-tile">
-                <a href="">
-                <img src="img\300x200.png" alt="Blog Personal">
-                </a>
-                <p><strong>Blog Personal</strong><br>
-                   Un blog donde comparto artículos sobre programación y tecnología.
-                </p>
-             </div>
+             
          </div>
       </section>
    </main>
-      <!-- Sección de Contacto -->
    
       <!-- Pie de Página -->
       <footer id="contact">
          <p>&copy; 2023 Jane Doe. Todos los derechos reservados.</p>
          <p>Creado con pasión y café.</p>
       </footer>
-      <!-- <script src="./js/landingPage.js"></script> -->
+      <script src="./js/landingPage.js"></script>
    </body>
 </html>
