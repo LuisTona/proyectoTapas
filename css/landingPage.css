@@ -64,10 +64,17 @@ footer {
     align-items: center;
     width: 100%;
     height: 100px;
-    
     & img{
         width: 100px;
         margin-left: 20px;
+    }
+    & div{
+        display: flex;
+        & input{
+            border: none;
+            border-radius: 20px;
+            padding: 4px;
+        }
     }
     & .nav-list .dropdown {
         position: relative;
@@ -304,6 +311,13 @@ footer {
     }
     #menu{
         display: none;
+    }
+    .nav{
+        & div{
+            & input{
+                display: none;
+            }
+        }
     }
     #hamburguesa{
         display: block;
