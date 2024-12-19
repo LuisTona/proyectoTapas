@@ -24,3 +24,9 @@ Contiene las tapas que se publican en nuestra página, con el nombre del bar, el
 Footer y Header
  
 El header cuenta con un logo vectorizado y el footer con 4 imágenes que sirven como enlaces también vectorizadas.
+
+Paginas para logos, imagenes y vectorizacion
+    https://derivv.com/
+    https://vectormagic.com/
+    https://image.online-convert.com/convert-to-svg
+    https://www.shopify.com/tools/
