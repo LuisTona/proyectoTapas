@@ -69,12 +69,12 @@ footer {
         width: 100px;
         margin-left: 20px;
     }
-    .nav-list .dropdown {
+    & .nav-list .dropdown {
         position: relative;
         display: inline-block;
     }
 
-    .dropdown-menu {
+    & .dropdown-menu {
         display: none;
         position: absolute;
         top: 100%;
@@ -86,17 +86,17 @@ footer {
         z-index: 1000;
     }
 
-    .dropdown-menu li a {
+    & .dropdown-menu li a {
         display: block;
         text-decoration: none;
         color: black;
     }
 
-    .dropdown-menu li a:hover {
+    & .dropdown-menu li a:hover {
         background-color: #f0f0f0;
     }
 
-    .dropdown:hover .dropdown-menu {
+    & .dropdown:hover .dropdown-menu {
         display: block;
     }
     
@@ -305,11 +305,11 @@ footer {
         width: 15px;
         margin-right: 35px;
         cursor: pointer;
-        hr{
+        & hr{
             color: #f0f0f0b4;
             width: 100%;
         }
-        .nav-list{
+        & .nav-list{
             position: absolute;
             right: 120px;
         }
