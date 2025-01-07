@@ -67,23 +67,46 @@ document.querySelector('#formulario').addEventListener('submit', function(event)
                 campo.classList.add('incorrecto');
                 errorMensaje[valor].style.display = 'block';
 
-            }else if(contraseña.value === confirPass.value){
-                    
-                const formData = new FormData(form);
-                const data = Object.fromEntries(formData);
-                // fallo en valido entra siempre cuando entra va a estar un campo true, si esta en true valida y registra corregir campo valido
-                if(valido && nombre.value.trim() !== '' && apellido1.value.trim() !== '' && correo.value.trim() !== '' && contraseña.value.trim() !== '' && privacidad.value.trim() !== ''){
-                    localStorage.setItem('usuario', JSON.stringify(data));
-                    localStorage.setItem('log', data.nombre)
-                    // window.location.assign('./index.html');
-                }
-            } 
+            // }else 
             
+            }
         });
+        if(contraseña.value === confirPass.value && valido){
+                
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            // fallo en valido entra siempre cuando entra va a estar un campo true, si esta en true valida y registra corregir campo valido
+            if(nombre.value.trim() !== '' && apellido1.value.trim() !== '' && correo.value.trim() !== '' && contraseña.value.trim() !== '' && privacidad.value.trim() !== ''){
+                let options = {
+                    method: 'POST',
+                    mode: 'cors',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data),
+                }
+            
+                fetch("http://localhost/php/www/proyectoTapas/php/registro.php", options)
+                .then(res=>{
+                    if(res.status === 201){
+                        // window.location.href = '../login.html'
+                        const datos = res.json();
+                        return datos;
+                    }
+                })
+            
+                .then(data=>{
+                    console.log(data.name);
+                    // localStorage.setItem('usuario', JSON.stringify(data));
+                    // localStorage.setItem('log', data.nombre)
+                })
+
+            }
+        } 
 
 
     }
-    manejadorErrores(valido);
+    // manejadorErrores(valido);
     
 });
 

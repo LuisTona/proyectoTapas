@@ -28,6 +28,12 @@ formulario.addEventListener('submit', (event)=>{
 
     const formData = new FormData(formulario);
     const data = Object.fromEntries(formData);
+    
+    if(data.privacidad== 'on'){
+        data.privacidad = true;
+    }else{
+        data.privacidad = false;
+    }
 
     let options = {
         method: 'POST',
@@ -41,12 +47,12 @@ formulario.addEventListener('submit', (event)=>{
     fetch("http://localhost/php/www/proyectoTapas/php/registro.php", options)
     .then(res=>{
         if(res === 201){
+            
             return res.json();
         }
     })
-
     .then(data=>{
-        console.log(data);
+        console.log(data.);
     })
 
 })

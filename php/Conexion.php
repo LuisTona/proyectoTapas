@@ -3,8 +3,8 @@
     Class Conexion extends mysqli {
         private $host = "localhost";
         private $db = "tapas";
-        private $user = "tapas";
-        private $pass = "tapas";
+        private $user = "root";
+        private $pass = "";
 
         public function __construct(){
             try{
