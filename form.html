@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0d0e251cce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./svg/logoTapasFavicon.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="./index.html" id="logo">
+            <img src="./svg/logoTapas.svg" alt="logo" width="50">
+        </a>
+        <h1 id="tituloPag">Tapas Gavela</h1>
+    </header>
+
+    <form id="formulario" action="" method="post">
+        <h2>Formulario Registro</h2>
+        <label for="nombre">Nombre <span>(obligatorio)</span>*</label>
+        <input type="text" name="nombre" id="nombre" aria-describedby="nombre-errorObligatorio nombre-formatoIncorrecto">
+        <div id="nombre-errorObligatorio"class="error-message">
+            <p>Nombre obligatorio</p>
+        </div>
+        <div id="nombre-formatoIncorrecto" class="error-message">
+            <p>El nombre no admite numeros</p>
+        </div>
+
+        <label for="apellido1">Primer apellido <span>(obligatorio)</span>*</label>
+        <input type="text" name="apellido1" id="apellido1" aria-describedby="apellido-errorObligatorio apellido-formatoIncorrecto">
+        <div id="apellido-errorObligatorio"class="error-message">
+            <p>Primer Apellido obligatorio</p>
+        </div>  
+        <div id="apellido-formatoIncorrecto" class="error-message">
+            <p>El apellido no admite numeros</p>
+        </div>  
+        
+        <label for="apellido2">Segundo apellido</label>
+        <input type="text" name="apellido2" id="apellido2" aria-describedby="apellido2-errorObligatorio apellido2-formatoIncorrecto">
+        <div id="apellido2-errorObligatorio"class="error-message">
+            <p>El segundo Apellido obligatorio</p>
+        </div>  
+        <div id="apellido2-formatoIncorrecto" class="error-message">
+            <p>El Segundo apellido no admite numeros</p>
+        </div>  
+
+        <label for="mail">Correo electronico <span>(obligatorio)</span>*</label>
+        <input type="text" name="mail" id="mail" aria-describedby="mail-errorObligatorio mail-formatoIncorrecto">
+        <div id="mail-errorObligatorio"class="error-message">
+            <p>Correo obligatorio</p>
+        </div>
+        <div id="mail-formatoIncorrecto" class="error-message">
+            <p>Correo incorrecto</p>
+        </div>
+
+        <label for="pass">Contraseña <span>(obligatorio)</span>*</label>
+        <input type="password" name="pass" id="pass" aria-describedby="pass-errorObligatorio pass-formatoIncorrecto">
+        <div id="pass-errorObligatorio"class="error-message">
+            <p>Contraseña obligatoria</p>
+        </div>
+        <div id="pass-formatoIncorrecto" class="error-message">
+            <p>Contraseña incorrecta, debe contenter al menos 8 carácteres </p>
+        </div>
+
+        <label for="confirmPass">Confirmar contraseña <span>(obligatorio)</span>*</label>
+        <input type="password" name="confirmPass" id="confirmPass" aria-describedby="confPass-Coincide">
+        <div id="confPass-Coincide"class="error-message">
+            <p>Las contraseñas no coinciden</p>
+        </div>
+
+        
+        <label for="privacidad">
+            <input type="checkbox" name="privacidad" id="privacidad" required>
+            Acepto la políticas de privacidad *
+        </label>
+        <div class="error-message">
+            <p>politicas obligatorias</p>
+        </div>
+        
+        
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+
+    <footer>
+        <div id="izquierda-footer">
+            <strong>Política de cookies</strong>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div id="derecha-footer">
+            <strong>Enlaces</strong>
+            <a href="#"><p>Aviso legal</p></a>
+            <a href="#"><p>Condiciones de uso</p></a>
+            <a href="#"><p>Política de privacidad</p></a>
+        </div>
+
+        <div id="iconos">
+            <a href="#">
+                <div class="circulo" id="icono1">
+                    <i class="fa-brands fa-x-twitter"></i>            
+                </div>
+            </a>
+        
+            <a href="#">
+                <div class="circulo" id="icono2">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </a>
+        
+            <a href="#">
+                <div class="circulo" id="icono3">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./js/from.js"></script>
+</body>
+</html>

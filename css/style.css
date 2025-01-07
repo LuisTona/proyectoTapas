@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-rows: 15vh 75vh 13vh;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #be3144;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ img {
+    /* height: 50px; */
+    width: 100px;
+    /* margin-left: 20px; */
+}
+
+#tituloPag {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+    margin-right: 80px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #d8d8d8;
+    border: solid 1px rgba(128, 128, 128, 0.735);
+    width: 400px;
+    height: 75%;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & label{
+        display: block;
+        margin-top: 12px;
+        font-weight: bold;
+        color: #333;
+        & span{
+            font-size: 11px;
+        }
+    }
+
+    & input{
+        width: 75%;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        border: none;
+    }
+    
+    & input:last-child{
+        margin: 15px;
+        width: 60%;
+    }
+    
+    & input[type="checkbox"] {
+        width: 20px;
+        height: 15px;
+        
+    }
+    
+    & .error-message {
+        color: red;
+        font-size: 10px;
+        display: none;
+    }
+    & p{
+        margin: 0px;
+    }
+    
+    & .error {
+        border: 2px solid red;
+    }
+    
+    & #enviar{
+        cursor: pointer
+    }
+    
+    & .incorrecto{
+        background-color: rgba(255, 124, 124, 0.615);
+        border: solid 1px red;
+    }
+
+    
+    @media (max-width: 768px) {
+        
+        form {
+            height: 300px;
+            margin-top: 120px;
+            margin-left: 0;
+        }
+        
+        #tituloPag {
+            font-size: 28px;
+        }
+        
+        #logo img {
+            height: 48px;
+        }
+    }
+    
+    
+    
+    @media (max-width: 480px) {
+        
+        #tituloPag {
+            font-size: 24px;
+        }
+        
+        form {
+            width: 95%;
+            padding: 15px;
+            margin-top: 160px;
+        }
+        
+        input[type="submit"] {
+            padding: 12px;
+            font-size: 14px;
+        }
+        
+        a {
+            font-size: 12px;
+        }
+    }  
+}
+
+@media screen and (max-width: 1560px){
+    body{
+        display: grid;
+        grid-template-rows: 15vh 120vh 13vh;
+    }
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#izquierda-footer strong {
+    font-size: 18px;
+    color: #333;
+}
+
+#izquierda-footer p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+#derecha-footer {
+
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+#derecha-footer strong {
+    font-size: 18px;
+    color: #333;
+}
+
+#derecha-footer a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    & p {
+        margin: 0px 0;
+        padding: 3px;
+    }
+}
+
+#derecha-footer a:hover {
+    text-decoration: underline;
+}
+
+#iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.circulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.circulo:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    #izquierda-footer, #derecha-footer {
+        padding: 0;
+        text-align: center;
+        flex: none;
+    }
+
+    #iconos {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1560px){
+    footer{
+        height: 100px;
+    }
+}
