@@ -43,7 +43,7 @@
                     if($con->affected_rows > 0){
                         $user = array();
                         $user['name'] = $nombre;
-                        print_r($user);
+                        header("Content-type:Application/Json");
                         echo json_encode($user);
                         header("HTTP/1.1 201 Created");
                     }

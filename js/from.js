@@ -90,13 +90,12 @@ document.querySelector('#formulario').addEventListener('submit', function(event)
                 .then(res=>{
                     if(res.status === 201){
                         // window.location.href = '../login.html'
-                        const datos = res.json();
-                        return datos;
+                        return res.json();
                     }
                 })
             
                 .then(data=>{
-                    console.log(data.name);
+                    console.log(data);
                     // localStorage.setItem('usuario', JSON.stringify(data));
                     // localStorage.setItem('log', data.nombre)
                 })
