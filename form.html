@@ -17,7 +17,7 @@
         <h1 id="tituloPag">Tapas Gavela</h1>
     </header>
 
-    <form id="formulario" action="" method="post">
+    <form id="formulario" action="php/registro.php" method="post">
         <h2>Formulario Registro</h2>
         <label for="nombre">Nombre <span>(obligatorio)</span>*</label>
         <input type="text" name="nombre" id="nombre" aria-describedby="nombre-errorObligatorio nombre-formatoIncorrecto">
@@ -47,7 +47,7 @@
         </div>  
 
         <label for="mail">Correo electronico <span>(obligatorio)</span>*</label>
-        <input type="text" name="mail" id="mail" aria-describedby="mail-errorObligatorio mail-formatoIncorrecto">
+        <input type="text" name="correo" id="mail" aria-describedby="mail-errorObligatorio mail-formatoIncorrecto">
         <div id="mail-errorObligatorio"class="error-message">
             <p>Correo obligatorio</p>
         </div>
@@ -117,6 +117,7 @@
         </div>
     </footer>
 
-    <script src="./js/from.js"></script>
+    <!-- <script src="./js/from.js"></script> -->
+    <script src="./js/registro.js"></script>
 </body>
 </html>

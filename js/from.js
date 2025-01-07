@@ -49,9 +49,12 @@ confirPass.addEventListener('blur', ()=>{
     }
 })
 
+
+
 document.querySelector('#formulario').addEventListener('submit', function(event) {
     event.preventDefault();
 
+ 
     let valido = true;
     if(comprobacionUsuarios(nombre.value)){
         campo.forEach(({campo, expresion, valor}) => {
@@ -72,10 +75,13 @@ document.querySelector('#formulario').addEventListener('submit', function(event)
                 if(valido && nombre.value.trim() !== '' && apellido1.value.trim() !== '' && correo.value.trim() !== '' && contraseña.value.trim() !== '' && privacidad.value.trim() !== ''){
                     localStorage.setItem('usuario', JSON.stringify(data));
                     localStorage.setItem('log', data.nombre)
-                    window.location.assign('./index.html');
+                    // window.location.assign('./index.html');
                 }
             } 
+            
         });
+
+
     }
     manejadorErrores(valido);
     
