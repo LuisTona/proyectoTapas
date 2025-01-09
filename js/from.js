@@ -89,13 +89,15 @@ document.querySelector('#formulario').addEventListener('submit', function(event)
                 fetch("http://localhost/php/www/proyectoTapas/php/registro.php", options)
                 .then(res=>{
                     if(res.status === 201){
-                        // window.location.href = '../login.html'
                         return res.json();
+                    }else{
+                        manejadorErrores(valido);
                     }
                 })
-            
+                
                 .then(data=>{
                     console.log(data);
+                    window.location.href = 'login.html'
                     // localStorage.setItem('usuario', JSON.stringify(data));
                     // localStorage.setItem('log', data.nombre)
                 })
@@ -105,7 +107,6 @@ document.querySelector('#formulario').addEventListener('submit', function(event)
 
 
     }
-    // manejadorErrores(valido);
     
 });
 
